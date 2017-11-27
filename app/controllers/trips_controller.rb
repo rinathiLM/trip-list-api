@@ -1,9 +1,12 @@
-class TripsController < ApplicationController
+class TripsController < ProtectedController
+  # update to protected controller so that user authentication is required to
+  # do anything on the application
+
   before_action :set_trip, only: [:show, :update, :destroy]
 
-  # GET /trips
+  # GET all /trips
   def index
-    @trips = Trip.all
+    @trips = current_user.trips.all
 
     render json: @trips
   end
@@ -15,7 +18,7 @@ class TripsController < ApplicationController
 
   # POST /trips
   def create
-    @trip = Trip.new(trip_params)
+    @trip = current_user.trips.build(trip_params)
 
     if @trip.save
       render json: @trip, status: :created, location: @trip
@@ -39,13 +42,14 @@ class TripsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_trip
-      @trip = Trip.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def trip_params
-      params.require(:trip).permit(:location, :done)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_trip
+    @trip = current_user.trips.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def trip_params
+    params.require(:trip).permit(:location, :done)
+  end
 end

@@ -17,6 +17,7 @@ Deployed API (using Heroku) - https://trip-list.herokuapp.com/
 #### API End-Points
 
 User resource:
+
 | Verb   | URI Pattern            | Controller#Action |
 |--------|------------------------|-------------------|
 | POST   | `/sign-up`             | users#signup      |
