@@ -1,19 +1,19 @@
-## About the Application
+### About the Application
 
 Trip List
 
-## Link to Application
+### Link to Application
 
-## Front-end Client Info
+### Front-end Client Info
 
-## ERD
+### ERD
 
-## API Info
+### API Info
 
-### API End-Points
+#### API End-Points
 
-## Technology
+### Technology
 
-## Development Process
+### Development Process
 
-## Issues & Future Enhancements
+### Issues & Future Enhancements
