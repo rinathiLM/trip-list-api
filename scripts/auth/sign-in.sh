@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# EMAIL="rina" PASSWORD="rina" sh scripts/auth/sign-in.sh TOKEN=BAhJIiU5NDgyZTFmZGZmMTJhODgwYjI2YWFjMjgxMzVjOGI4NgY6BkVG--7f6abe4775c366a5f7eba7c40dcd06707e96bef3
+# EMAIL="rina@test.com" PASSWORD="rina" sh scripts/auth/sign-in.sh TOKEN=BAhJIiVjYTMyNDE1ZWIxYzUwNGVkZDE2ZGE4NjM4NTYyMTNkZgY6BkVG--50fea74570ead6bb2fa53d51e60c71d9b2bc1b39
 
 API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/sign-in"
