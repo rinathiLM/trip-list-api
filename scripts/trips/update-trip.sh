@@ -6,6 +6,7 @@ curl --include --request PATCH "http://localhost:4741/trips/${ID}" \
   --header "Content-Type: application/json" \
   --data '{
     "trip": {
-      "done": "'"${DONE}"'"
+      "done": "'"${DONE}"'",
+      "image": "'"${IMAGE}"'"
     }
   }'
