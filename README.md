@@ -14,7 +14,7 @@ Deployed API (using Heroku) - https://trip-list.herokuapp.com/
 
 ## API End-Points
 
-User resource:
+**User resource:**
 
 | Verb   | URI Pattern            | Controller#Action |
 |--------|------------------------|-------------------|
@@ -23,7 +23,7 @@ User resource:
 | PATCH  | `/change-password/:id` | users#changepw    |
 | DELETE | `/sign-out/:id`        | users#signout     |
 
-Trip resource:
+**Trip resource:**
 
 | Verb   | URI Pattern            | Controller#Action |
 |--------|------------------------|-------------------|
